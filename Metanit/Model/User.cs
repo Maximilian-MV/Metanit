@@ -15,8 +15,8 @@ namespace Metanit
     public class User : INotifyPropertyChanged
     {
         public int id { get; set; }
-        public string? name { get; set; }
-        public int age { get; set; }
+        private string? name { get; set; }
+        private int age { get; set; }
 
        
         public string Name

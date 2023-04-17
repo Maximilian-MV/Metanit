@@ -13,7 +13,7 @@
         <!--<TextBox x:Name="textBox1" Height="30" />
         <TextBox x:Name="textBox2" Height="30" Text="{Binding ElementName=textBox1, Path=Text, Mode=TwoWay}" />-->
 
-        <ComboBox x:Name="cmbFarm" ItemsSource="{Binding ElementName=usersList, Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="211,50,211,267">
+        <ComboBox x:Name="cmbFarm" ItemsSource="{Binding usersList, Mode=TwoWay}" Margin="211,50,211,267">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

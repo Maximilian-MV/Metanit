@@ -43,7 +43,7 @@ namespace Metanit
             // загружаем данные из БД
             db.Users.Load();
             // и устанавливаем данные в качестве контекста
-            DataContext = db.Users.Local.ToObservableCollection();
+            DataContext = new { usersList = db.Users.Local.ToObservableCollection() };
 
 
         }
